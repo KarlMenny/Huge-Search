@@ -1,0 +1,127 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+body {
+	background: #f1f1f1;
+	font-family: Arial, sans-serif;
+}
+
+.hugesearch-main {
+	padding-top: 40px;
+}
+
+.hugesearch-form {
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+
+}
+
+.hugesearch-input {
+	width: 100%;
+	padding: 0 80px 0 10px;
+	box-sizing: border-box;
+	border: none;
+	font-size: 5.95em;
+	font-weight: 700;	
+	background: inherit;
+	color: #ec5a62;
+}
+
+.hugesearch-input::placeholder {
+	color: rgba(145,145,145,0.5);
+}
+
+.hugesearch-button {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	text-indent: 100px;
+	overflow: hidden;
+	background: url(../img/magnifier.svg);
+	border: none;
+	cursor: pointer;
+	transform: translate(0, -50%) scale(1);
+	transform-origin: 100% 50%;
+	transition: transform .3s;
+}
+
+.hugesearch-button:hover {
+	transform: translate(0, -50%) scale(1.1);
+}
+
+/*----------MAIN----------*/
+
+.hugesearch-content {
+	width: 100%;
+	margin-top: 38px;
+	padding: 0 10.5%;
+	box-sizing: border-box;
+}
+
+.hugesearch-column {
+	width: 30%;
+	display: inline-block;
+}
+
+.hugesearch-column:nth-child(2) {
+	margin: 0 4.7%;
+}
+
+.hugesearch-column h2 {
+	font-size: 1em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: 800;
+	margin: .8em 0;
+	color: #c2c2c2;
+}
+
+.hugesearch-column ul {
+	list-style-type: none;
+}
+
+.hugesearch-column a {
+	display: block;
+	padding: .75em;
+	margin: .3em 0;
+	cursor: pointer;
+	border-radius: 5px;
+	text-decoration: none;
+	background: rgba(118,117,128,0.05);
+	color: rgba(145,145,145,0.7);
+	transition: transform .3s;
+}
+
+.hugesearch-column a:hover {
+	background: rgba(118,117,128,0.1);
+	color: #EC5A62;
+	transform: scale(1.1);
+}
+
+.hugesearch-column img {
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.hugesearch-column img.people {
+	border-radius: 50%;
+}
+
+.hugesearch-column span {
+	display: inline-block;
+	width: calc(100% - 70px);
+	vertical-align: middle;
+	font-size: 0.85em;
+	font-weight: 700;
+}
+
+
+
+
+
